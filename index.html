@@ -23,7 +23,7 @@
      </a-assets>
 
 
-    <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" present="hiro">
+    <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker">
       <a-entity
           id="animated-model"
           gltf-model="#animated-asset"
@@ -33,8 +33,8 @@
         </a-entity>
   </a-marker>
    <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
-    <!-- <a-marker-camera present="hiro"></a-marker-camera> -->
-    <a-entity camera></a-entity>  
+    <a-marker-camera present="hiro"></a-marker-camera>
+    
 
 
   </a-scene>
