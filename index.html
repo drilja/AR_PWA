@@ -7,9 +7,9 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <link rel="stylesheet" type="text/css" href="./style.css"/>
-  <script src="events.js">
+  <!-- <script src="events.js">
     console.log("On the Edge of Reality - Testing 22.Januar 2021"); 
-  </script>
+  </script> -->
 </head>
 
 <body>
@@ -24,7 +24,7 @@
       <a-asset-item id="animated-asset" src="src\Iljav1-m.glb"></a-asset-item>
      </a-assets>
 
-
+<!-- 
     <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker">
       <a-entity
           id="animated-model"
@@ -33,11 +33,11 @@
           rotation="0 0 0" 
           scale="5 5 5">
         </a-entity>
-  </a-marker>
+  </a-marker> -->
    <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
-    <!-- <a-marker-camera present="hiro"></a-marker-camera> -->
+    <a-marker-camera present="hiro"></a-marker-camera>
        <!-- add a simple camera -->
-       <a-entity camera></a-entity> 
+       <!-- <a-entity camera></a-entity>  -->
 
 
   </a-scene>
