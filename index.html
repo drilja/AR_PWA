@@ -14,43 +14,6 @@
           alert("Hi there!");
         });
     };
-
-    handleRotation(event) {
-    if (isMarkerVisible) {
-      el.object3D.rotation.y +=
-        event.detail.positionChange.x * rotationFactor;
-
-      el.object3D.rotation.x +=
-        event.detail.positionChange.y * rotationFactor;
-    }
-  }
-
-  sceneEl.addEventListener("markerFound", (e) => {
-    isMarkerVisible = true;
-});
-
-sceneEl.addEventListener("markerLost", (e) => {
-    isMarkerVisible = false;
-});
-
-handleScale(event) {
-    if (isMarkerVisible) {
-      this.scaleFactor *=
-        1 + event.detail.spreadChange / event.detail.startSpread;
-
-      this.scaleFactor = Math.min(
-        Math.max(this.scaleFactor, this.data.minScale),
-        this.data.maxScale
-      );
-
-      el.object3D.scale.x = scaleFactor * initialScale.x;
-      el.object3D.scale.y = scaleFactor * initialScale.y;
-      el.object3D.scale.z = scaleFactor * initialScale.z;
-    }
-  }
-
-
-
   </script>
   <style>
     .buttons {
@@ -84,32 +47,15 @@ handleScale(event) {
     renderer="logarithmicDepthBuffer: true;"
     vr-mode-ui="enabled: false"
     gesture-detector
-    id="scene"  
+    id="scene"
+  
     >
-    <a-assets>
-      <a-asset-item
-        id="bowser"
-        src="src\Iljav1-m.glb"
-      >
-      </a-asset-item>
-    </a-assets>
-
-
-      <a-marker preset="hiro"
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="markerA">
-
+      <a-marker preset="hiro">
         <a-entity
-        id="bowser-model"
-        gltf-model="#bowser"
-        position="0 90 0"
-        scale="5 5 5"
-        class="clickable"
-        gesture-handler
-      >
-
+          position="0 90 0"
+          scale="5 5 5"
+          gltf-model="src\Iljav1-m.glb"
+        ></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
