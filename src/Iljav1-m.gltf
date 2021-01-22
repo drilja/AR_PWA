@@ -1,0 +1,131 @@
+{
+  "asset": {
+    "generator": "Scandy Pro 3D Scanner",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5125,
+      "count": 1690254,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 286409,
+      "max": [
+        0.102979,
+        0.222369,
+        0.131937
+      ],
+      "min": [
+        -0.203351,
+        -0.216347,
+        -0.142999
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 286409,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 286409,
+      "type": "VEC3"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 6761016,
+      "byteOffset": 0,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 3436908,
+      "byteOffset": 6761016,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4582544,
+      "byteOffset": 10197924,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 3436908,
+      "byteOffset": 14780468,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Iljav1-m_data.bin",
+      "byteLength": 18217376
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "COLOR_0": 2,
+            "NORMAL": 3
+          },
+          "indices": 0,
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0
+      },
+      "doubleSided": true
+    }
+  ]
+}
