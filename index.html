@@ -7,7 +7,7 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <link rel="stylesheet" type="text/css" href="./style.css"/>
-  <script src="events.js">
+  <!-- <script src="events.js"> -->
     console.log("On the Edge of Reality"); 
   </script>
 </head>
@@ -18,22 +18,22 @@
 
     
     <!-- <a-box position = "0 0 0" width = "1" height= "1" color= "#070100" ></a-box> -->
-    <!-- <a-entity gltf-model="src\Marius1-m.glb" position="0 0 0" rotation="90 90 90" scale="5 5 5" /> -->
+    <a-entity gltf-model="src\Iljav1-m.glb" position="0 0 0" rotation="90 90 90" scale="5 5 5" />
    
-    <a-assets>
+    <!-- <a-assets>
       <a-asset-item id="animated-asset" src="src\Iljav1-m.glb"></a-asset-item>
-     </a-assets>
+     </a-assets> -->
 
 
-    <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker">
+    <!-- <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker">
       <a-entity
           id="animated-model"
           gltf-model="#animated-asset"
           position="0 0 0" 
           rotation="90 90 90" 
-          scale="5 5 5">
+          scale="100 100 100">
         </a-entity>
-  </a-marker>
+  </a-marker> -->
    <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
     <a-marker-camera present="hiro"></a-marker-camera>
        <!-- add a simple camera -->
@@ -44,8 +44,7 @@
   
 
   <div class="centered">
-    <button data-action="change"></button>
-    Button
+    <button data-action="change">BUTTON</button>
 </div>
 
 </body>
