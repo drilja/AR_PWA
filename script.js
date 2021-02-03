@@ -30,19 +30,19 @@ function staticLoadpuppet() {
 
 var models = [
     {
-        url: '\src\Iljav1-m.glb',
-        scale: '10 10 10',
+        url: 'src/Iljav1-m.glb',
+        scale: '1 1 1',
         info: 'Magnemite, Lv. 5, HP 10/10',
         rotation: '0 180 0',
     },
     {
-        url: '\src\Iljav1-m.glb',
+        url: 'src/Iljav1-m.glb',
         scale: '0.2 0.2 0.2',
         rotation: '0 180 0',
         info: 'Ilja, AR Designer, HP 100/100',
     },
     {
-        url: '\src\whale\test1.glb',
+        url: 'src/whale/test1.glb',
         scale: '0.08 0.08 0.08',
         rotation: '0 180 0',
         info: 'Test Person, Lv. 99, HP 150/150',
