@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html>
+<html>  
+  <head>
   <title>On the Edge of Reality</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,11 @@
   <script src="gesture-detector.js"></script>
   <script src="gesture-handler.js"></script>
   <script src="script.js"></script>
+</head>
 
+<body>
 
-    <div id="info" class="centered">
-      <button  data-action="change"></button>
-    </div>
-
+  <div class="centered instructions"></div>
 
     <a-scene 
     embedded 
@@ -28,7 +28,7 @@
     <a-assets>
       <a-asset-item
         id="puppet1"
-        src="src\whale\test1.glb"
+        src="\src\Iljav1-m.glb"
       >
       </a-asset-item>
     </a-assets>
@@ -45,7 +45,7 @@
       id="puppet1-model"
       gltf-model="#puppet1"
       position="0 0 0"
-      scale="0.05 0.05 0.05"
+      scale="10 10 10"
       class="clickable"
       gesture-handler
     >
@@ -53,5 +53,11 @@
   </a-marker>
   <a-entity camera></a-entity>
 </a-scene>
+
+<div class="centered">
+  <button id="info" data-action="change"></button>
+</div>
+
+
 </body>
 </html>
