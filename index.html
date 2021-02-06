@@ -25,33 +25,10 @@
     gesture-detector
     id="scene"
     >
-    <a-assets>
-      <a-asset-item
-        id="puppet1"
-        src="src/Iljav1-m.glb"
-      >
-      </a-asset-item>
-    </a-assets>
+    
+    <a-marker-camera preset='hiro'></a-marker-camera>
 
 
-    <a-marker
-    preset="hiro"
-    raycaster="objects: .clickable"
-    emitevents="true"
-    cursor="fuse: false; rayOrigin: mouse;"
-    id="markerA"
-  >
-    <a-entity
-      id="puppet1-model"
-      gltf-model="#puppet1"
-      position="0 0 0"
-      scale="1 1 1"
-      class="clickable"
-      gesture-handler
-    >
-    </a-entity>
-  </a-marker>
-  <a-entity camera></a-entity>
 </a-scene>
 
 <div class="centered">

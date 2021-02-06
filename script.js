@@ -37,13 +37,13 @@ var models = [
     },
     {
         url: 'src/Iljav1-m.glb',
-        scale: '0.2 0.2 0.2',
+        scale: '1 1 1',
         rotation: '0 180 0',
         info: 'Ilja, AR Designer, HP 100/100',
     },
     {
         url: 'src/whale/test1.glb',
-        scale: '0.08 0.08 0.08',
+        scale: '1 1 1',
         rotation: '0 180 0',
         info: 'Test Person, Lv. 99, HP 150/150',
     },
@@ -77,7 +77,7 @@ function changePuppet(puppet) {
         let longitude = puppet.location.lng;
 
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+        model.setAttribute('gps-entity-place', 'latitude: ${latitude}; longitude: ${longitude};');
 
         setModel(models[modelIndex], model);
 
