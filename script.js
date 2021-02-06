@@ -30,20 +30,20 @@ function staticLoadpuppet() {
 var models = [
     {
         url: 'src/bug_v1.glb',
-        scale: '1 1 1',
+        scale: '0.1 0.1 0.1',
         info: 'Bug, Lv. 5, HP 10/10',
-        rotation: '0 180 0',
+        rotation: '90 90 90',
     },
     {
         url: 'src/frankv1.glb',
-        scale: '1 1 1',
-        rotation: '0 180 0',
+        scale: '0.1 0.1 0.1',
+        rotation: '90 90 90',
         info: 'Puppet from Frank, HP 100/100',
     },
     {
         url: 'src/whale_v1.glb',
-        scale: '1 1 1',
-        rotation: '0 180 0',
+        scale: '0.5 0.5 0.5',
+        rotation: '90 90 90',
         info: 'Whale Puppet, Lv. 99, HP 150/150',
     },
 ];
@@ -78,11 +78,13 @@ function changePuppet(puppet) {
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', 'latitude: ${latitude}; longitude: ${longitude};');
 
-        setModel(models[modelIndex], model);
+      
 
         model.setAttribute('animation-mixer', '');
         model.setAttribute('gesture-handler');
-        model.setAttribute('clickable')
+        model.setAttribute('clickable');
+
+        setModel(models[modelIndex], model);
 
         document.querySelector('button[data-action="change"]').addEventListener('click', function () {
             var entity = document.querySelector('[gps-entity-place]');
