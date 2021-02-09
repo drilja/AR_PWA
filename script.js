@@ -1,6 +1,16 @@
 
-console.log("test erfolgreich")
+console.log("test 1");
 
+
+AFRAME.registerComponent('arjs', {
+    init: function () {
+var sceneEl = document.querySelector('a-scene');
+console.log(sceneEl);
+
+console.log("test 2");
+
+}
+});
 
 
   window.onload = () => {
@@ -82,7 +92,7 @@ function changePuppet(puppet) {
 
         model.setAttribute('animation-mixer', '');
         model.setAttribute('gesture-handler');
-        model.setAttribute('clickable');
+        model.setAttribute('class', 'clickable');
 
         setModel(models[modelIndex], model);
 
