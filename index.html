@@ -26,7 +26,15 @@
     id="scene"
     >
     
-    <a-marker-camera preset='hiro'></a-marker-camera>
+
+    <a-marker-camera preset='hiro'
+    preset="hiro"
+    raycaster="objects: .clickable"
+    emitevents="true"
+    cursor="fuse: false; rayOrigin: mouse;"
+    id="markerA"
+    
+    ></a-marker-camera>
 
 </a-scene>
 

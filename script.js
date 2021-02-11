@@ -21,7 +21,7 @@ console.log("test 2");
     alert("This is marker 1");
     });    
 
-    let puppet = staticLoadpuppet();
+    var puppet = staticLoadpuppet();
     changePuppet(puppet);
 };
 
@@ -74,18 +74,22 @@ var setModel = function (model, entity) {
 
     entity.setAttribute('gltf-model', model.url);
 
+
+    entity.setAttribute('gesture-handler');
+    entity.setAttribute('class', 'clickable');
+
     const div = document.querySelector('.instructions');
     div.innerText = model.info;
 };
 
 function changePuppet(puppet) {
-    let scene = document.querySelector('a-scene');
+    var scene = document.querySelector('a-scene');
 
     puppet.forEach((puppet) => {
-        let latitude = puppet.location.lat;
-        let longitude = puppet.location.lng;
+        var latitude = puppet.location.lat;
+        var longitude = puppet.location.lng;
 
-        let model = document.createElement('a-entity');
+        var model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', 'latitude: ${latitude}; longitude: ${longitude};');
 
       
