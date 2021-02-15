@@ -1,6 +1,7 @@
 // Component that detects and emits events for touch gestures
 
 AFRAME.registerComponent("gesture-detector", {
+
     schema: {
       element: { default: "" }
     },
@@ -101,6 +102,7 @@ AFRAME.registerComponent("gesture-detector", {
     },
   
     getTouchState: function(event) {
+      // console.log("gesture detector is selected");
       if (event.touches.length === 0) {
         return null;
       }

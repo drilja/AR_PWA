@@ -9,6 +9,8 @@ AFRAME.registerComponent("gesture-handler", {
     },
   
     init: function () {
+
+      
       this.handleScale = this.handleScale.bind(this);
       this.handleRotation = this.handleRotation.bind(this);
   
@@ -59,6 +61,7 @@ AFRAME.registerComponent("gesture-handler", {
           this.data.maxScale
         );
   
+        console.log("gesture handler is selected");
         this.el.object3D.scale.x = this.scaleFactor * this.initialScale.x;
         this.el.object3D.scale.y = this.scaleFactor * this.initialScale.y;
         this.el.object3D.scale.z = this.scaleFactor * this.initialScale.z;
