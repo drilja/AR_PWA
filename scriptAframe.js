@@ -3,16 +3,10 @@ AFRAME.registerComponent('log', {
   
     init: function () {
       var stringToLog = this.data;
-      console.log(stringToLog);
-
-      
-
+    //   console.log(stringToLog);
+    //   console.log(this.el.sceneEl); 
+    // var sceneEl = document.querySelector('a-scene');
+    // console.log(sceneEl.querySelector('#puppet1'));
+    // console.log(document.querySelector('button'))
     }
   });
-
-
-  function pressButton(){
-    document.querySelector('button[data-action="change"]').addEventListener('click', function () {
-        console.log("Button pressed")
-    }); 
-  }
