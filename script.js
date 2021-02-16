@@ -18,7 +18,7 @@ console.log("test 2");
     button.innerText = '?';
     button.addEventListener("click", function(){
     console.log("Button wurde geklickt!");
-    alert("This is marker 1");
+    // alert("This is marker 1");
     });    
 
     var puppet = staticLoadpuppet();
@@ -42,18 +42,18 @@ var models = [
         url: 'src/bug_v1.glb',
         scale: '0.1 0.1 0.1',
         info: 'Bug, Lv. 5, HP 10/10',
-        rotation: '90 90 90',
+        rotation: '0 0 0',
     },
     {
         url: 'src/frankv1.glb',
         scale: '0.1 0.1 0.1',
-        rotation: '90 90 90',
+        rotation: '0 0 0',
         info: 'Puppet from Frank, HP 100/100',
     },
     {
         url: 'src/whale_v1.glb',
-        scale: '0.5 0.5 0.5',
-        rotation: '90 90 90',
+        scale: '0.1 0.1 0.1',
+        rotation: '0 0 0',
         info: 'Whale Puppet, Lv. 99, HP 150/150',
     },
 ];
