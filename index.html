@@ -5,12 +5,13 @@
   <title>On the Edge of Reality</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
   <link rel="stylesheet" href="style.css">
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <script src="gesture-detector.js"></script>
   <script src="gesture-handler.js"></script>
-  <script src="script.js"></script>
+  <script src="scriptAframe.js"></script>
 </head>
 
 <body>
@@ -26,7 +27,13 @@
     id="scene"
     >
     
-    <a-box color="red" color-on-click="color: blue"></a-box>
+    <!-- <a-box color="red" color-on-click="color: blue"></a-box> -->
+
+
+
+    <a-box id="boxId" position="0 1 -3" rotation="0 45 0" color="blue"></a-box>
+           
+           
 
     <a-marker-camera 
         preset='hiro'
@@ -34,6 +41,8 @@
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
         ></a-marker-camera>
+
+
 
 
 

@@ -93,12 +93,12 @@ function changePuppet(puppet) {
         setModel(models[modelIndex], model);
 
         document.querySelector('button[data-action="change"]').addEventListener('click', function () {
-            var entity = document.querySelector('a-marker-camera');
+            var entity = document.querySelector('a-scene');
             
             modelIndex++;
 
-            entity.setAttribute('gesture-handler');
-            entity.setAttribute('class', 'clickable');
+            // entity.setAttribute('gesture-handler');
+            // entity.setAttribute('class', 'clickable');
             var newIndex = modelIndex % models.length;
             setModel(models[newIndex], entity);
             // setModel(models[newIndex]);
