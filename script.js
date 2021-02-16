@@ -1,16 +1,16 @@
 
-console.log("test 1");
 
 
-AFRAME.registerComponent('arjs', {
-    init: function () {
-var sceneEl = document.querySelector('a-scene');
-console.log(sceneEl);
 
-console.log("test 2");
+// AFRAME.registerComponent('arjs', {
+//     init: function () {
+// var sceneEl = document.querySelector('a-scene');
+// console.log(this.el.sceneEl);
 
-}
-});
+
+// console.log("these are clickable entities: " + sceneEl.querySelectorAll('.clickable'));
+// }
+// });
 
 
   window.onload = () => {
@@ -101,7 +101,7 @@ function changePuppet(puppet) {
         setModel(models[modelIndex], model);
 
         document.querySelector('button[data-action="change"]').addEventListener('click', function () {
-            var entity = document.querySelector('a-scene');
+            var entity = document.querySelector('.clickable');
             modelIndex++;
             var newIndex = modelIndex % models.length;
             setModel(models[newIndex], entity);
