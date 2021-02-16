@@ -44,7 +44,7 @@ var models = [
     },
     {
         url: 'src/whale_v1.glb',
-        scale: '0.1 0.1 0.1',
+        scale: '0.5 0.5 0.5',
         rotation: '0 0 0',
         info: 'Whale Puppet, Lv. 99, HP 150/150',
     },
