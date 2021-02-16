@@ -2,15 +2,7 @@
 
 
 
-// AFRAME.registerComponent('arjs', {
-//     init: function () {
-// var sceneEl = document.querySelector('a-scene');
-// console.log(this.el.sceneEl);
 
-
-// console.log("these are clickable entities: " + sceneEl.querySelectorAll('.clickable'));
-// }
-// });
 
 
   window.onload = () => {
