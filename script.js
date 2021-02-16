@@ -86,11 +86,11 @@ function changePuppet(puppet) {
     var scene = document.querySelector('a-scene');
 
     puppet.forEach((puppet) => {
-        var latitude = puppet.location.lat;
-        var longitude = puppet.location.lng;
+        // var latitude = puppet.location.lat;
+        // var longitude = puppet.location.lng;
 
         var model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', 'latitude: ${latitude}; longitude: ${longitude};');
+        // model.setAttribute('gps-entity-place', 'latitude: ${latitude}; longitude: ${longitude};');
 
       
 
@@ -101,7 +101,7 @@ function changePuppet(puppet) {
         setModel(models[modelIndex], model);
 
         document.querySelector('button[data-action="change"]').addEventListener('click', function () {
-            var entity = document.querySelector('[gps-entity-place]');
+            var entity = document.querySelector('a-scene');
             modelIndex++;
             var newIndex = modelIndex % models.length;
             setModel(models[newIndex], entity);
