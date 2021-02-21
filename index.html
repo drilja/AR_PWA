@@ -11,7 +11,7 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <script src="gesture-detector.js"></script>
   <script src="gesture-handler.js"></script>
-  <script src="scriptAframe.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -26,81 +26,17 @@
     gesture-detector
     id="scene"
     log="Hello, Scene is loaded"
+    arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'
     >
 
-    <a-assets>
-      <a-asset-item
-        id="puppet1"
-        src='src/bug_v1.glb'
-      >
-      </a-asset-item>
-
-      <a-asset-item
-      id="puppet2"
-      src='src/frankv1.glb'
-    >
-    </a-asset-item>
-
-    <a-asset-item
-    id="puppet3"
-    src='src/whale_v1.glb'
-  >
-  </a-asset-item>
-
-    </a-assets>
-    
-    <!-- <a-box color="red" color-on-click="color: blue"></a-box> -->
 
 
-    
 
-    <!-- <a-marker-camera 
-        preset='hiro'
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        ></a-marker-camera>
- -->
- <a-marker
- preset="hiro"
- raycaster="objects: .clickable"
- emitevents="true"
- cursor="fuse: false; rayOrigin: mouse;"
- id="markerA"
- log="Hello, Marker!"
->
- <a-entity
-   id="puppet1"
-   gltf-model="#puppet1"
-   position="0 0 0"
-   scale="0.1 0.1 0.1"
-   class="clickable"
-   gesture-handler
-   log="entity puppet1"
- >
- </a-entity>
- <a-entity
- id="puppet2"
- gltf-model="#puppet2"
- position="0 0 0"
- scale="0.1 0.1 0.1"
- class="clickable"
- gesture-handler
- log="entity puppet2"
->
-</a-entity>
-<a-entity
-id="puppet3"
-gltf-model="#puppet3"
-position="0 0 0"
-scale="0.1 0.1 0.1"
-class="clickable"
-gesture-handler
-log="entity puppet3"
->
-</a-entity>
-</a-marker>
-<a-entity camera></a-entity>
+<a-marker-camera preset='hiro'  raycaster="objects: .clickable"
+emitevents="true"
+cursor="fuse: false; rayOrigin: mouse;"
+id="markerA"
+log="Hello, Marker!"></a-marker-camera>
 
 
 
